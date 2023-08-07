@@ -1,0 +1,265 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Anek Devanagari', sans-serif;
+}
+
+body, head {
+    height: 100%;
+}
+
+.clear {
+    clear: both;
+}
+
+.center {
+    width: 100%;
+    margin: 0 auto;
+    max-width: 1280px;
+}
+
+.header {
+    width: 100%;
+    height: 60px;
+    background-color: #2a1e47;
+    padding: 0 2%;
+}
+
+.header img {
+    margin: 15px;
+}
+
+.banner {
+    background-image: url('../imagens/header_bg.png');
+    padding: 0 2%;
+    width: 100%;
+    height: 557px;
+    background-size: cover;
+    background-position: center;
+}
+
+.banner > .center {
+    height: 100%;
+}
+
+.form {
+    padding: 10px;
+    float: right;
+    top: -15px;
+    width: 400px;
+    height: calc(100% + 30px);
+    background-color: white;
+    position: relative;
+    bottom: 15px;
+    border: 8px solid rgba(194, 194, 194, 0.5);
+    background-clip: padding-box;
+    /*background-origin: ; mesmo concei mais e para imagens*/
+}
+
+.form > h2 {
+    font-weight: normal;
+    color: rgb(142, 142, 142);
+    font-size: 21px;
+}
+
+.input-cotainer {
+    margin-top: 20px;
+}
+
+.input-container span, .form p {
+    display: inline-block;
+    width: 100%;
+    font-size: 17px;
+    color: #BBBBBB;
+    margin-top: 12px;
+}
+
+.form p {
+    margin: 20px 0;
+}
+
+.input-container input[type=text] {
+    width: 344px;
+    height: 55px;
+    border: 1px solid #ccc;
+    margin-bottom: 8px;
+}
+
+.form input[type=submit] {
+    border: 0;
+    cursor: pointer;
+    color: white;
+    font-size: 25px;
+    width: 280px;
+    height: 56px;
+    background-color: #263A6D;
+    display: inline-block;
+}
+
+.form .input-cotainer-submit {
+    text-align: center;
+}
+
+.form input[type=submit]:hover {
+    background-color: #323665;
+}
+
+.container-list {
+    padding: 30px;
+    margin-top: 100px;
+    float: left;
+    width: 519px;
+    height: 270px;
+    background-color: rgba(33, 35, 67, 0.7);
+}
+
+.container-list ul {
+    list-style-position: inside;
+}
+
+.container-list li {
+    margin-top: 18px;
+    color: white;
+}
+
+.container-2 {
+    padding: 40px 2%;
+    background-color: #ccc;
+    text-align: center;
+}
+
+.container-2 h2 {
+    font-weight: normal;
+}
+
+.container-2 p {
+    max-width: 768px;
+    width: 100%;
+    display: inline-block;
+    text-align: justify;
+    margin: 15px 0;
+}
+
+.arrow {
+    position: relative;
+    top: 60px;
+    left: 50%;
+    margin-left: -20px;
+    width: 40px;
+    height: 40px;
+    background-image: url(../imagens/arrow.png);
+    background-size: 100%;
+    background-size: 100% 100%;
+}
+
+.especifica {
+    padding: 90px 2%;
+}
+
+
+
+.especifica h2{
+    text-align: center;
+    font-weight: normal;
+    color: #452e6a;
+}
+
+.especifica-section {
+    margin-top: 40px;
+    text-align: center;
+}
+
+.especifica-single p {
+    display: inline-block;
+    text-align: justify;
+    padding: 10px 25px;
+}
+
+.especifica-single {
+    float: left;
+    width: 33.333%;
+    padding: 30px;
+}
+
+.especifica-single img {
+    width: 70px;
+}
+
+.direitos {
+    height: 100px;
+    text-align: center;
+    color: #ccc;
+}
+
+.direitos h2 {
+    padding-top: 20px;
+    font-weight: normal;
+    border-top: 4px solid rgb(113, 113, 113);
+}
+
+@media screen and (max-width: 1024px) {
+    .header {
+        height: auto;
+        width: 100%;
+        padding: 15px 0;
+        text-align: center;
+    }
+
+    .header img {
+        margin: 0;
+    }
+
+    .banner {
+        padding: 40px 2%;
+        width: 100%;
+        height: auto;
+        text-align: center;
+    }
+
+    .form {
+        padding: 10px;
+        margin-top: 30px;
+        float: none;
+        width: 90%;
+        height: 100%;
+        display: inline-block;
+        top: 0;
+        max-width: 400px;
+        /*background-origin: ; mesmo conceito mais e para imagens*/
+    }
+
+    .container-list {
+        padding: 30px 0;
+        margin-top: 0;
+        float: none;
+        width: 90%;
+        height: auto;
+        max-width: 500px;
+        display: inline-block;
+    }
+    
+    .input-container input[type=text] {
+        width: 100%;
+        height: 55px;
+    }
+    
+    .form input[type=submit] {
+        width: 100%;
+        max-width: 280px;
+        height: 56px;
+    }
+
+    .especifica-single {
+        float: none;
+        width: 100%;
+        max-width: 600px;
+        padding: 30px 0;
+        display: inline-block;
+    }
+
+    .container-2 p {
+        padding-left: 4%;
+        padding-right: 4%;
+    }
+}

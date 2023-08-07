@@ -1,0 +1,262 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Open Sans';
+}
+
+html, body {
+    min-height: 100%;
+}
+
+header {
+    width: 100%;
+    height: 70px;
+    background-color: rgb(220, 220, 220);
+}
+
+.container {
+    max-width: 1280px;
+    display: flex;
+    justify-content: space-between;
+    margin: 0 auto;
+}
+
+.logo {
+    margin: 10px 40px;
+}
+
+.logo img {
+    width: 150px;
+}
+
+@media screen and (max-width: 510px) {
+    .container {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .logo {
+        margin: 20px;
+    }
+    
+    header {
+        height: auto;
+    }
+}
+
+section.sect-form {
+    max-width: 90%;
+    min-height: 560px;
+    margin: 0 auto;
+    background-image: url(./imangens/bg-form.jpg);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+
+}
+
+.posisection {
+    float: right;
+    margin-right: 40px;
+    margin-top: 20px;
+}
+
+.formform {
+    text-align: center;
+}
+
+.legenform {
+    width: 400px;
+    background-color: rgb(220 220 220);
+    border-radius: 7px 7px 0 0;
+    padding: 7% 3%;
+}
+
+.field-form {
+    width: auto;
+    height: 400px;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    align-items: center;
+    border-radius: 0 0 7px 7px;
+    background-color: rgba(255, 255, 255, 0.598);
+}
+
+.field-form input {
+    width: 90%;
+    height: 38px;
+    outline: none;
+    border: 1px solid #c4c4c4;
+    border-radius: 7px;
+    padding-left: 1rem;
+    padding-right: 1rem;
+}
+
+.field-form label {
+    color: #3b3b3b;
+    font-size: 15px;
+    padding-top: 15px;
+    padding-bottom: 7px;
+}
+
+.field-form button {
+    width: 90%;
+    height: 38px;
+    border: 0;
+    border-radius: 3px;
+    cursor: pointer;
+    font-weight: bold;
+    color: white;
+    background-color: rgb(3 60 80);
+    margin: 40px;
+}
+
+.field-form legend {
+    color: #3b3b3b;
+    font-size: 13px;
+}
+
+@media screen and (max-width: 510px){
+    .legenform {
+        width: auto;
+    }
+    
+    .posisection {
+        float: none;
+        width: 78%;
+        margin: 0 auto;
+        padding: 50px 0;
+    }
+
+    section.sect-form {
+        height: 100%;
+        max-width: 100%;
+    }
+}
+
+.image {
+    width: 62px;
+    height: 62px;
+    background-image: url(./imangens/arrow.png);
+    background-size: 100% 100%;
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%) translateY(-50%);
+}
+
+.detalies {
+    max-width: 90%;
+    padding: 2.5rem 1rem;
+    background-color: rgb(220 220 220);
+    text-align: center;
+    margin: 0 auto;
+}
+
+.mainsection {
+    background-color: #d1e3ef;
+    max-width: 90%;
+    margin: 0 auto;
+}
+
+.mosaico{
+    display: flex;
+    height: 300px;
+    padding-top: 10px;
+    align-items: center;
+    text-align: center;
+}
+
+.mosaico p {
+    padding: 4rem 1rem;
+    width: 390px;
+}
+
+.mosaico_reverse {
+    flex-direction: row-reverse;
+}
+
+.mosaicoimg4 {
+    background: url(./imangens/mosaico4.jpg) center no-repeat;
+}
+
+.mosaicoimg3 {
+    background: url(./imangens/mosaico3.jpg) center no-repeat;
+}
+
+.mosaicoimg2 {
+    background: url(./imangens/mosaico2.jpg) center no-repeat;
+    background-size: 100%;
+    margin-right: 30px;
+}
+
+.mosaicoimg1 {
+    background: url(./imangens/mosaico1.jpg) center no-repeat;
+    background-size: 100%;
+}
+
+.baner {
+    width: 70%;
+    height: 100%;
+}
+
+@media screen and (max-width: 510px) {
+    .detalies {
+        max-width: 100%;
+    }
+    .mainsection {
+        max-width: 100%;
+    }
+}
+
+@media screen and (max-width: 1000px) {
+    .mosaico {
+        flex-direction: column;
+        height: 500px;
+    }
+
+    .baner{
+        width: 100%;
+    }
+
+    .mosaicoimg2 {
+        margin: 0;
+    }
+}
+
+.info {
+    width: 90%;
+    margin: 0 auto;
+    background-color: rgba(220, 220, 220, 1);
+    text-align: center;
+    font-size: 1rem;
+    padding: 2rem;
+}
+
+.info h3 {
+    padding-bottom: 20px;
+}
+
+.info ul {
+    text-decoration: underline;
+}
+
+footer {
+    text-align: center;
+    color: #525252;
+    margin-top: 30px;
+    font-size: 15px;
+}
+
+footer img {
+    margin-top: 20px;
+    width: 130px;
+}
+
+@media screen and (max-width: 510px) {
+    .info {
+        width: 100%;
+        margin: 0;
+    }
+}
